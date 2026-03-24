@@ -1,0 +1,67 @@
+Atividade – Engenharia de Prompt
+Etapa 1 – Problema escolhido
+
+O problema escolhido foi a criação de uma função em Python para validar e-mails em um sistema de cadastro de usuários. Essa funcionalidade é comum em aplicações reais e exige uma validação confiável.
+
+Etapa 2 – Prompt inicial (vago)
+
+Prompt utilizado:
+
+“Faça um código para validar e-mail”
+
+Resposta obtida:
+
+def validar(email):
+    return "@" in email
+Etapa 3 – Análise da resposta
+
+A resposta gerada apresenta limitações, pois apenas verifica a presença do caractere “@”, o que não garante que o e-mail seja válido. Dessa forma, entradas incorretas podem ser aceitas. Além disso, o código não segue boas práticas e não possui validação robusta.
+
+Etapa 4 – Aplicação da Equação do Prompt
+
+Para melhorar o resultado, foi aplicada a Equação do Prompt:
+
+Persona: Desenvolvedor Python experiente
+Contexto: Sistema de cadastro de usuários
+Restrições: Utilizar regex, código limpo e retornar True ou False
+
+Etapa 5 – Prompt melhorado
+
+Novo prompt:
+
+“Você é um desenvolvedor Python experiente. Crie uma função para validar e-mails em um sistema de cadastro. Use regex, retorne True ou False e explique de forma simples.”
+
+Etapa 6 – Resultado melhorado
+import re
+
+def validar_email(email):
+    padrao = r'^[^\s@]+@[^\s@]+\.[^\s@]+$'
+    return bool(re.match(padrao, email))
+
+Explicação:
+
+O código utiliza uma expressão regular (regex) para verificar se o e-mail segue um formato básico válido (texto@texto.dom
+ínio). A função retorna True para e-mails válidos e False para inválidos.
+
+Etapa 7 – Versão final refinada
+import re
+
+def validar_email(email: str) -> bool:
+    if not isinstance(email, str):
+        return False
+
+    email = email.strip()
+    padrao = r'^[^\s@]+@[^\s@]+\.[^\s@]+$'
+
+    return bool(re.match(padrao, email))
+
+Melhorias realizadas:
+
+Verificação do tipo da variável
+Remoção de espaços desnecessários
+Código mais seguro e próximo de uso real
+Conclusão
+
+A atividade demonstrou que prompts vagos geram respostas simples e pouco eficazes. Ao aplicar a Equação do Prompt, incluindo persona, contexto e restrições, foi possível obter um resultado mais completo e profissional.
+
+Além disso, o refinamento do prompt foi essencial para melhorar a qualidade da solução, tornando-a mais adequada para aplicações reais. Isso evidencia a importância da engenharia de prompts para obter respostas mais precisas e eficientes.
