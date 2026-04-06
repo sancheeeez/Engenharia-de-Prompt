@@ -1,0 +1,5 @@
+Nesta atividade, foi utilizada a ferramenta OpenAI Tokenizer para analisar como um texto é dividido em tokens por modelos de linguagem. Ao inserir o nome completo junto com a frase “A engenharia de prompt otimiza LLMs”, observou-se que o conteúdo foi segmentado em 17 tokens, totalizando 61 caracteres.
+
+A análise mostrou que os tokens não correspondem exatamente a palavras inteiras, mas sim a partes delas, incluindo espaços e pequenas variações linguísticas. Essa divisão é importante porque os modelos de IA processam textos com base em tokens, influenciando diretamente no custo, desempenho e compreensão das respostas geradas.
+
+Assim, a atividade permitiu entender, na prática, como funciona a tokenização e sua relevância na engenharia de prompts, sendo um fator essencial para otimizar a comunicação com modelos de linguagem
