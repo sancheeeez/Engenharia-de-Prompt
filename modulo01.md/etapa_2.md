@@ -1,0 +1,3 @@
+A atividade demonstra que a previsão de palavras em modelos de linguagem pode variar conforme o nível de criatividade aplicado. Mesmo partindo de um mesmo início de frase, como “O gato come…”, é possível obter respostas tanto lógicas e previsíveis, baseadas em conhecimento real, quanto criativas e interpretativas, que exploram metáforas e abstrações.
+
+Isso evidencia que a IA não apenas replica padrões, mas também consegue adaptar seu estilo de resposta conforme o direcionamento do prompt. Assim, compreender esse equilíbrio entre lógica e criatividade é essencial na engenharia de prompts, permitindo gerar respostas mais adequadas ao objetivo desejado.
